@@ -1,0 +1,41 @@
+.nav-wrapper {
+  padding: 0px 9vw;
+}
+
+
+.page-content {
+  padding: 60px 10vw;
+  background-color: white;
+  margin: 0px 10vw;
+  height: 100vh;
+}
+
+.page-content h1 {
+  font-size: xx-large;
+  margin: 0;
+}
+
+.page-content p {
+    margin : 0;
+    font-size: medium;
+}
+
+body {
+  background-color: #8489a7;
+}
+
+.dividing-text {
+    background-color: #1a237e ;
+    color : white;
+    font-size: 1.2rem;
+    padding : 10px;
+    margin : 30px 0px
+}
+
+.dividing-text p {
+    margin : 0px
+}
+
+.page-content table {
+    margin : 30px 0px
+}

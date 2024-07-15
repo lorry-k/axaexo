@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXA - Logs</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper indigo darken-4">
+        <ul id="nav-mobile">
+          <li><a href="index.html">Forms</a></li>
+          <li><a href="logs.html">Logs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page-content z-depth-3">
+      <h1>Logs</h1>
+      <p>Ordering Tool</p>
+
+      <table id="#logs" class="striped responsive-table">
+        <thead>
+          <tr>
+            <th>Client First Name</th>
+            <th>Client Last Name</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </tbody>
+      </table>
+      <div class="button-form center-align">
+        <button
+          class="btn waves-effect waves-light center-align red darken-4"
+          id="refresh"
+        >
+          Refresh
+          <i class="material-icons right">autorenew</i>
+        </button>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Script JS -->
+    <script src="script.js"></script>
+    <script>
+      getLogs();
+    </script>
+  </body>
+</html>
